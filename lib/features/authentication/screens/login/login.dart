@@ -1,4 +1,5 @@
 import 'package:c_commerce/common/styles/spacing_styels.dart';
+import 'package:c_commerce/utils/constants/colors.dart';
 import 'package:c_commerce/utils/constants/image_strings.dart';
 import 'package:c_commerce/utils/constants/sizes.dart';
 import 'package:c_commerce/utils/constants/text_strings.dart';
@@ -104,6 +105,43 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Flexible(child: Divider(color:  dark? TColors.darkGrey :TColors.grey, thickness: 0.5, indent: 60, endIndent: 5, )),
+                  Text(TTexts.orSingInwith,style: Theme.of(context).textTheme.labelMedium,),
+                  Flexible(child: Divider(color:  dark? TColors.darkGrey :TColors.grey, thickness: 0.5, indent: 5, endIndent: 60, ))
+                ],
+              ),
+              // footer 
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    decoration:BoxDecoration(border: Border.all(color: TColors.grey),borderRadius: BorderRadius.circular(100)) ,
+                    child: IconButton(
+                      onPressed: (){},
+                       icon: const Image(
+                          width: TSizes.iconMd,
+                          height: TSizes.iconMd,
+                        image: AssetImage(TImages.lightImage)
+                        )
+                       ),
+                  ),
+                  SizedBox(width:TSizes.spaceBtwItems,),
+                  Container(
+                    decoration:BoxDecoration(border: Border.all(color: TColors.grey),borderRadius: BorderRadius.circular(100)) ,
+                    child: IconButton(
+                      onPressed: (){},
+                       icon: const Image(
+                          width: TSizes.iconMd,
+                          height: TSizes.iconMd,
+                        image: AssetImage(TImages.lightImage)
+                        )
+                       ),
+                  )
+                ],
+              )
             ],
           ),
         ),

@@ -1,3 +1,4 @@
+import 'package:c_commerce/features/authentication/screens/login/login.dart';
 import 'package:c_commerce/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +11,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: TApptheme.lightTheme,
       darkTheme: TApptheme.darkTheme,
+      home: const LoginScreen(),
     );
   }
 }
