@@ -1,12 +1,14 @@
 import 'package:c_commerce/common/styles/spacing_styels.dart';
 import 'package:c_commerce/common/widgets.login_singup/form_divider.dart';
 import 'package:c_commerce/common/widgets.login_singup/social_buttons.dart';
+import 'package:c_commerce/features/authentication/screens/singup.widgets/singup.dart';
 import 'package:c_commerce/utils/constants/image_strings.dart';
 import 'package:c_commerce/utils/constants/sizes.dart';
 import 'package:c_commerce/utils/constants/text_strings.dart';
 import 'package:c_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:get/get.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -98,7 +100,7 @@ class LoginScreen extends StatelessWidget {
                        SizedBox(
                         width: double.infinity,
                         child: OutlinedButton(
-                          onPressed: () {},
+                          onPressed: ()=> Get.to(() => const SingupScreen()),
                           child: Text(TTexts.createAccount),
                         ),
                       ),

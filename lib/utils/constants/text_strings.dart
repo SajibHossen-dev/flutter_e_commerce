@@ -30,6 +30,9 @@ class TTexts {
   static const String orSingUpwith = 'or Sing up with';
   static const String iAgreeTo = 'I Agree to';
   static const String privacyPolicy = 'Privacy Policy';
+  static const String termsOfUse = 'Terms of use';
+  static const String and = 'and';
+
   static const String verificationCode = 'verification Code';
   static const String resendEmail = 'Resend Email';
   static const String resendEmailIn = 'Resend email in';
@@ -43,11 +46,16 @@ class TTexts {
   static const String forgetPasswordSubTitle =
       "Don't worry sometimes people can forget too, enter your email and we will send you a password reset link";
   static const String changeYourPasswordTitle = "Password Reset Email sent";
-  static const String confirmEmail = "Your Account security is Our Prioiry! we've sent You a Seure Link to safely Change your Password and keep Your Account Protected";
-  static const String confirmEmailSubTitle  = "Congratulations! Your Account Awaits: Verify Your Email to start Shopping and Experience a World of unrivaled Deals and Personalized Offers";
-  static const String emailNotReceivedMessage  = "Did't get the email? Check Your junk/spam or resend it ";
-  static const String yourAccountCreateTitle  = "Your Account successfully created! ";
-  static const String yourAccountCreateSubTitle  = "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the joy of seamless Online Shopping ";
+  static const String confirmEmail =
+      "Your Account security is Our Prioiry! we've sent You a Seure Link to safely Change your Password and keep Your Account Protected";
+  static const String confirmEmailSubTitle =
+      "Congratulations! Your Account Awaits: Verify Your Email to start Shopping and Experience a World of unrivaled Deals and Personalized Offers";
+  static const String emailNotReceivedMessage =
+      "Did't get the email? Check Your junk/spam or resend it ";
+  static const String yourAccountCreateTitle =
+      "Your Account successfully created! ";
+  static const String yourAccountCreateSubTitle =
+      "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the joy of seamless Online Shopping ";
   // home
 
   static const String homeAppBarTitle = 'Good day for shopping';
