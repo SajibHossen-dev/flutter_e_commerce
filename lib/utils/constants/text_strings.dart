@@ -46,12 +46,13 @@ class TTexts {
   static const String forgetPasswordSubTitle =
       "Don't worry sometimes people can forget too, enter your email and we will send you a password reset link";
   static const String changeYourPasswordTitle = "Password Reset Email sent";
-  static const String confirmEmail =
-      "Your Account security is Our Prioiry! we've sent You a Seure Link to safely Change your Password and keep Your Account Protected";
+  static const String confirmEmail = "Verify Your email address!";
+  // ="Your Account security is Our Prioiry! we've sent You a Seure Link to safely Change your Password and keep Your Account Protected";
   static const String confirmEmailSubTitle =
       "Congratulations! Your Account Awaits: Verify Your Email to start Shopping and Experience a World of unrivaled Deals and Personalized Offers";
   static const String emailNotReceivedMessage =
       "Did't get the email? Check Your junk/spam or resend it ";
+  static const String tContinue = 'Continue';
   static const String yourAccountCreateTitle =
       "Your Account successfully created! ";
   static const String yourAccountCreateSubTitle =

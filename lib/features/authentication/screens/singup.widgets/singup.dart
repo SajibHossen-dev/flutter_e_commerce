@@ -1,10 +1,13 @@
-import 'package:c_commerce/common/widgets.login_singup/form_divider.dart';
-import 'package:c_commerce/common/widgets.login_singup/social_buttons.dart';
+import 'package:c_commerce/common/widgets/login_singup/form_divider.dart';
+import 'package:c_commerce/common/widgets/login_singup/social_buttons.dart';
+import 'package:c_commerce/features/authentication/screens/singup.widgets/verify_email.dart';
 import 'package:c_commerce/utils/constants/colors.dart';
 import 'package:c_commerce/utils/constants/sizes.dart';
 import 'package:c_commerce/utils/constants/text_strings.dart';
 import 'package:c_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SingupScreen extends StatelessWidget {
@@ -109,42 +112,56 @@ class SingupScreen extends StatelessWidget {
                               ),
                               TextSpan(
                                 text: '${TTexts.privacyPolicy} ',
-                                style: Theme.of(context).textTheme.bodyMedium!.apply(
-                                  color: dark ? TColors.white : TColors.primary,
-                                  decoration: TextDecoration.underline,
-                                  decorationColor: dark ? TColors.white : TColors.primary
-                                ) 
+                                style: Theme.of(context).textTheme.bodyMedium!
+                                    .apply(
+                                      color: dark
+                                          ? TColors.white
+                                          : TColors.primary,
+                                      decoration: TextDecoration.underline,
+                                      decorationColor: dark
+                                          ? TColors.white
+                                          : TColors.primary,
+                                    ),
                               ),
-                                TextSpan(
+                              TextSpan(
                                 text: TTexts.and,
-                                style: Theme.of(context).textTheme.bodyMedium
+                                style: Theme.of(context).textTheme.bodyMedium,
                               ),
-                                TextSpan(
+                              TextSpan(
                                 text: ' ${TTexts.termsOfUse} ',
-                                style: Theme.of(context).textTheme.bodyMedium!.apply(
-                                  color: dark ? TColors.white : TColors.primary,
-                                  decoration: TextDecoration.underline,
-                                  decorationColor: dark ? TColors.white : TColors.primary,
-                                  
-                                ) 
+                                style: Theme.of(context).textTheme.bodyMedium!
+                                    .apply(
+                                      color: dark
+                                          ? TColors.white
+                                          : TColors.primary,
+                                      decoration: TextDecoration.underline,
+                                      decorationColor: dark
+                                          ? TColors.white
+                                          : TColors.primary,
+                                    ),
                               ),
                             ],
                           ),
                         ),
                       ],
                     ),
-                    SizedBox(height: TSizes.spaceBtwSections,),
-                    // sing up button 
-                    SizedBox(width: double.infinity, child:  ElevatedButton(onPressed: (){}, child: const Text(TTexts.createAccount)),),
-                    SizedBox(height: TSizes.spaceBtwSections,),
+                    SizedBox(height: TSizes.spaceBtwSections),
+                    // sing up button
+                    SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed: () => Get.to(() => verifyEmail()),
+                        child: const Text(TTexts.createAccount),
+                      ),
+                    ),
+                    SizedBox(height: TSizes.spaceBtwSections),
 
-                    // divider 
+                    // divider
                     TFormDivider(),
-SizedBox(height: TSizes.spaceBtwSections,),
-                    // social button 
+                    SizedBox(height: TSizes.spaceBtwSections),
 
+                    // social button
                     TSocialButtons(),
-
                   ],
                 ),
               ),
