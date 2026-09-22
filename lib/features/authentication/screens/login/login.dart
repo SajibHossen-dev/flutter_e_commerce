@@ -1,6 +1,7 @@
 import 'package:c_commerce/common/styles/spacing_styels.dart';
 import 'package:c_commerce/common/widgets/login_singup/form_divider.dart';
 import 'package:c_commerce/common/widgets/login_singup/social_buttons.dart';
+import 'package:c_commerce/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:c_commerce/features/authentication/screens/singup.widgets/singup.dart';
 import 'package:c_commerce/utils/constants/image_strings.dart';
 import 'package:c_commerce/utils/constants/sizes.dart';
@@ -80,7 +81,7 @@ class LoginScreen extends StatelessWidget {
                           ),
                           // forget password
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () => Get.to(() => const ForgetPassword()),
                             child: const Text(TTexts.forgetPassword),
                           ),
                         ],

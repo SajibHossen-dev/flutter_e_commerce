@@ -150,7 +150,7 @@ class SingupScreen extends StatelessWidget {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () => Get.to(() => verifyEmail()),
+                        onPressed: () => Get.to(() => const VerifyEmail()),
                         child: const Text(TTexts.createAccount),
                       ),
                     ),
