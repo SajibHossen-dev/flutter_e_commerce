@@ -43,10 +43,12 @@ class TTexts {
   static const String loginSubTitle =
       "Discover Limitless Choices and unmatched Convenience";
   static const String singUpTitle = "Let's create your account";
+  static const String done = "Done";
   static const String forgetPasswordTitle = "Forget Password";
   static const String forgetPasswordSubTitle =
       "Don't worry sometimes people can forget too, enter your email and we will send you a password reset link";
-  static const String changeYourPasswordTitle = "Password Reset Email sent";
+  static const String resetPasswordTitle = "Password Reset Email sent";
+  static const String resetPasswordSubTitle = "Your Account Security is Our Priotity! We've sent You a secure Link to Safely change Your Password and Keep Your Account Protected";
   static const String confirmEmail = "Verify Your email address!";
   // ="Your Account security is Our Prioiry! we've sent You a Seure Link to safely Change your Password and keep Your Account Protected";
   static const String confirmEmailSubTitle =
