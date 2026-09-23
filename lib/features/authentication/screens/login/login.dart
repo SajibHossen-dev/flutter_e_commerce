@@ -3,6 +3,7 @@ import 'package:c_commerce/common/widgets/login_singup/form_divider.dart';
 import 'package:c_commerce/common/widgets/login_singup/social_buttons.dart';
 import 'package:c_commerce/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:c_commerce/features/authentication/screens/singup.widgets/singup.dart';
+import 'package:c_commerce/nevigation_menu.dart';
 import 'package:c_commerce/utils/constants/image_strings.dart';
 import 'package:c_commerce/utils/constants/sizes.dart';
 import 'package:c_commerce/utils/constants/text_strings.dart';
@@ -92,7 +93,7 @@ class LoginScreen extends StatelessWidget {
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: ()=>  Get.to( const NevigationMenu()),
                           child: Text(TTexts.singIn),
                         ),
                       ),
