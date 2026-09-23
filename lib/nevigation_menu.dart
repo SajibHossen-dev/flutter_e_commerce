@@ -1,3 +1,4 @@
+import 'package:c_commerce/features/shop/screens/home/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -37,5 +38,5 @@ class NevigationMenu extends StatelessWidget {
 
 class navigationConroller extends GetxController{
   final Rx<int> selectedIndex = 0.obs ;
-  final screens = [Container(color: Colors.green,) , Container(color: Colors.purple,), Container(color: Colors.orange,) , Container(color: Colors.blue,)];
+  final screens = [HomeScreen() , Container(color: Colors.purple,), Container(color: Colors.orange,) , Container(color: Colors.blue,)];
 }
